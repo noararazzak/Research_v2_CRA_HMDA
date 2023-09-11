@@ -1,0 +1,16 @@
+#Folders#
+#########
+
+.idea/
+Fall_2023_Data/
+Non_git_files/
+__pycache__/
+
+#Files#
+
+#csvs#
+*.csv
+
+#R history file#
+
+r/.Rhistory
