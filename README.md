@@ -19,9 +19,9 @@ a. Rename all aggregate files as "exp_aggr.dat"
 
 b. Rename all aggregate files as "exp_aggr_A1-1.dat" or "exp_aggr_A1-2.dat" etc. depending on table. 
 
-5. Change the variables year nd table_id in the conversion_car_dat_to_csv.py file. 
+5. Change the variables year and table_id in the conversion_cra_dat_to_csv.py file. 
 
-6. Keep the conversion_car_dat_to_csv.py file and CRA_Flat_Agg_Specs.csv in the same folder and run. 
+6. Keep the conversion_cra_dat_to_csv.py file and CRA_Flat_Agg_Specs.csv in the same folder and run. 
 
 
 B. For the HMDA LAR Files
