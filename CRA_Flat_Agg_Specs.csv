@@ -1,0 +1,22 @@
+Field, Start, End, Length
+Table ID,1,5,5 
+Activity Year,6,9,4 
+Loan Type,10,10,1
+Action Taken Type,11,11,1
+State,12,13,2
+County,14,16,3 
+MSA/MD,17,21,5
+Census Tract,22,28,7
+Split County Indicator,29,29,1
+Population Classification,30,30,1
+Income Group Total,31,33,3
+Report Level,34,36,3
+Number of Small Business Loans Originated with Loan Amount at Origination =< $100000,37,46,10
+Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination =< $100000,47,56,10
+Number of Small Business Loans Originated with Loan Amount at Origination > $100000 and =< $250000,57,66,10
+Total Loan Amount of Small Business Loans Originated with Loan Amountat Origination > $100000 and =< $250000,67,76,10
+Number of Small Business Loans Originated with Loan Amount at Origination > $250000 and =< $1 million,77,86,10
+Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250000 and =< $1 million,87,96,10
+Number of Loans Originated to Small Businesses with Gross Annual Revenues =< $1 million,97,106,10 
+Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues =< $1 million,107,116,10
+Filler,117,145,29
