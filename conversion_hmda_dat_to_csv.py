@@ -3,19 +3,16 @@ import csv
 
 cwd = os.getcwd()
 print(cwd)
-year = "2021"
-table_id = "A1-1"
-if len(table_id) < 5:
-    table_id += " "
+year = "2011"
 
 # Location of CRA files
-file_location_cra_raw_files = os.path.join(cwd, "Data", "Raw_Data_CRA", year)
+file_location_cra_raw_files = os.path.join(cwd, "Data", "Raw_Data_HMDA")
 print(file_location_cra_raw_files)
 
-# From years 2011 until 2015
-# file_name_cra = "exp_aggr.dat"
-# From years 2016 until 2021
-file_name_cra = "exp_aggr_" + table_id.strip(" ") + ".dat"
+
+# From years 2011 until 2013
+file_name_hmda = year + "HMDALAR.dat"
+
 
 # Output folder where mdi data will be stored.
 output_location = os.path.join(cwd, "Data", "Data_extracted_csv", year)
@@ -25,16 +22,16 @@ if not os.path.exists(output_location):
 print(output_location)
 
 # Finding out if I can get the correct CRA file
-data_file_path = os.path.join(file_location_cra_raw_files, file_name_cra)
+data_file_path = os.path.join(file_location_cra_raw_files, file_name_hmda)
 print(data_file_path)
 
 # Field specification is a custom-made csv based on file specs with each dat file
-file_field_specification = "CRA_Flat_Agg_Specs.csv"
+file_field_specification = "HMDA_Lar_Specs.csv"
 file_field_specification_path = os.path.join(cwd, file_field_specification)
 print(file_field_specification_path)
 
 # Name of the file that is finally extracted
-file_name_after_iteration = year + "_aggr_" + table_id
+file_name_after_iteration = year + "HMDALAR - National"
 
 # This is obtained from the file specs
 field_specification_list = []
@@ -70,10 +67,9 @@ def store_dat_file_data_to_list(filepath):
 
     for line in dat_file:
         current_record_list = []
-        if table_id == line[:5]:
-            for field_spec in field_specification_list:
-                current_record_list.append(field_spec.get_value_from_line(line))
-            all_records_list.append(current_record_list)
+        for field_spec in field_specification_list:
+            current_record_list.append(field_spec.get_value_from_line(line))
+        all_records_list.append(current_record_list)
 
     dat_file.close()
 
