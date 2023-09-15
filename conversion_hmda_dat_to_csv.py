@@ -3,10 +3,10 @@ import csv
 
 cwd = os.getcwd()
 print(cwd)
-year = "2011"
+year = "2013"
 
 # Location of CRA files
-file_location_cra_raw_files = os.path.join(cwd, "Data", "Raw_Data_HMDA")
+file_location_cra_raw_files = os.path.join(cwd, "data", "raw_data_HMDA")
 print(file_location_cra_raw_files)
 
 
@@ -15,7 +15,7 @@ file_name_hmda = year + "HMDALAR.dat"
 
 
 # Output folder where mdi data will be stored.
-output_location = os.path.join(cwd, "Data", "Data_extracted_csv", year)
+output_location = os.path.join(cwd, "data", "data_extracted_csv", year)
 if not os.path.exists(output_location):
     os.makedirs(output_location)
 

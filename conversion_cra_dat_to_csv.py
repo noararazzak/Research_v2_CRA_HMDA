@@ -9,16 +9,16 @@ if len(table_id) < 5:
     table_id += " "
 
 # Location of CRA files
-file_location_cra_raw_files = os.path.join(cwd, "Data", "Raw_Data_CRA", year)
+file_location_cra_raw_files = os.path.join(cwd, "data", "raw_data_CRA", year)
 print(file_location_cra_raw_files)
 
 # From years 2011 until 2015
 # file_name_cra = "exp_aggr.dat"
-# From years 2016 until 2021
+# From years 2016 until 2021s
 file_name_cra = "exp_aggr_" + table_id.strip(" ") + ".dat"
 
 # Output folder where mdi data will be stored.
-output_location = os.path.join(cwd, "Data", "Data_extracted_csv", year)
+output_location = os.path.join(cwd, "data", "data_extracted_csv", year)
 if not os.path.exists(output_location):
     os.makedirs(output_location)
 

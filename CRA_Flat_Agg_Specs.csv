@@ -14,7 +14,7 @@ Report Level,34,36,3
 Number of Small Business Loans Originated with Loan Amount at Origination =< $100000,37,46,10
 Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination =< $100000,47,56,10
 Number of Small Business Loans Originated with Loan Amount at Origination > $100000 and =< $250000,57,66,10
-Total Loan Amount of Small Business Loans Originated with Loan Amountat Origination > $100000 and =< $250000,67,76,10
+Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $100000 and =< $250000,67,76,10
 Number of Small Business Loans Originated with Loan Amount at Origination > $250000 and =< $1 million,77,86,10
 Total Loan Amount of Small Business Loans Originated with Loan Amount at Origination > $250000 and =< $1 million,87,96,10
 Number of Loans Originated to Small Businesses with Gross Annual Revenues =< $1 million,97,106,10 

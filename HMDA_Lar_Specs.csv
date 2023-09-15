@@ -1,5 +1,5 @@
 Field, Start, End, Length
-as_of_date,1,4,4
+activity_year,1,4,4
 responded_id,5,14,10
 agency_code,15,15,1
 type_of_loan,16,16,1
