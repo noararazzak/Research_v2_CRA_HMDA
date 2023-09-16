@@ -3,7 +3,7 @@ import csv
 
 cwd = os.getcwd()
 print(cwd)
-year = "2021"
+year = "2011"
 table_id = "A1-1"
 if len(table_id) < 5:
     table_id += " "
@@ -13,9 +13,9 @@ file_location_cra_raw_files = os.path.join(cwd, "data", "raw_data_CRA", year)
 print(file_location_cra_raw_files)
 
 # From years 2011 until 2015
-# file_name_cra = "exp_aggr.dat"
-# From years 2016 until 2021s
-file_name_cra = "exp_aggr_" + table_id.strip(" ") + ".dat"
+file_name_cra = "exp_aggr.dat"
+# From years 2016 until 2021
+# file_name_cra = "exp_aggr_" + table_id.strip(" ") + ".dat"
 
 # Output folder where mdi data will be stored.
 output_location = os.path.join(cwd, "data", "data_extracted_csv", year)
