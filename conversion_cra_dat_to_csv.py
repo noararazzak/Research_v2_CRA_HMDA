@@ -3,8 +3,8 @@ import csv
 
 cwd = os.getcwd()
 print(cwd)
-year = "2011"
-table_id = "A1-1"
+year = "2021"
+table_id = "A1-1a"
 if len(table_id) < 5:
     table_id += " "
 
@@ -13,9 +13,9 @@ file_location_cra_raw_files = os.path.join(cwd, "data", "raw_data_CRA", year)
 print(file_location_cra_raw_files)
 
 # From years 2011 until 2015
-file_name_cra = "exp_aggr.dat"
+# file_name_cra = "exp_aggr.dat"
 # From years 2016 until 2021
-# file_name_cra = "exp_aggr_" + table_id.strip(" ") + ".dat"
+file_name_cra = "exp_aggr_" + table_id.strip(" ") + ".dat"
 
 # Output folder where mdi data will be stored.
 output_location = os.path.join(cwd, "data", "data_extracted_csv", year)
@@ -29,7 +29,7 @@ data_file_path = os.path.join(file_location_cra_raw_files, file_name_cra)
 print(data_file_path)
 
 # Field specification is a custom-made csv based on file specs with each dat file
-file_field_specification = "CRA_Flat_Agg_Specs.csv"
+file_field_specification = "CRA_Flat_Agg_Specs_2.csv"
 file_field_specification_path = os.path.join(cwd, file_field_specification)
 print(file_field_specification_path)
 

@@ -1,0 +1,17 @@
+Field, Start, End, Length
+Table ID,1,5,5 
+Activity Year,6,9,4 
+Loan Type,10,10,1
+Action Taken Type,11,11,1
+State,12,13,2
+County,14,16,3 
+MSA/MD,17,21,5
+Respondent ID,22,31,10
+Agency Code,32,32,1
+Number of Lenders,33,37,5
+Report Level,38,40,3
+Number of Small Business Loans,41,50,10
+Total Loan Amount of Small Business Loans, 51, 60, 10
+Number of Loans Originated to Small Businesses with Gross Annual Revenues =< $1 million,61,70,10 
+Total Loan Amount of Loans Originated to Small Businesses with Gross Annual Revenues =< $1 million,71,80,10
+Filler,81,145,65
