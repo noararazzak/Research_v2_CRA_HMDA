@@ -2,11 +2,13 @@
 #########
 
 .idea/
-Data/
-Non_git_files/
+data/
+non_git_files/
 __pycache__/
 
 #Files#
+
+*.csv
 
 
 #R history file#
